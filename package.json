@@ -1,0 +1,11 @@
+{
+  "name": "gdg_project",
+  "version": "1.0.0",
+  "description": "A mini CTF-style web app with a **retro-cyber terminal**, **JWT auth**, and a **2–3 step discovery** to reveal a secret key.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
