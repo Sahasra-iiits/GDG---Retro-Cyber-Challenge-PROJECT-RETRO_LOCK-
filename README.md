@@ -17,7 +17,6 @@ The project is divided into **client**(Frontend) and **server**(Backend):
 
 - **Frontend**: React + Vite
 - **Backend**: Node.js + Express.js
-- **Hosting**: Vercel (client) & Render/Heroku (server)
 
 ---
 
@@ -66,13 +65,6 @@ npm start
 
 ---
 
-### 🌐 Deployment
-
-Client (React): Vercel Link
-
-Server (Node/Express): Heroku/Render Link
-
----
 
 ### 🎨 Features
 
@@ -89,7 +81,6 @@ Clean separation of frontend & backend
 ### 🔮 Future Enhancements
 
 Add a timer for puzzle completion
-
 
 Add some more animations to make it attractive
 
