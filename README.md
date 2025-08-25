@@ -40,13 +40,13 @@ The project is divided into **client**(Frontend) and **server**(Backend):
 
 ### 1️⃣ Clone Repository
 
-```bash
 git clone https://github.com/Sahasra-iiits/GDG---Retro-Cyber-Challenge-PROJECT-RETRO_LOCK-.git
 cd gdg-project
 
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 
 Client
+
 cd client
 npm install
 npm run dev
@@ -56,27 +56,32 @@ cd server
 npm install
 npm start
 
-🌐 Deployment
+---
+
+### 🌐 Deployment
 
 Client (React): Vercel Link
 
 Server (Node/Express): Heroku/Render Link
 
+---
 
-🎨 Features
+### 🎨 Features
 
 Terminal-style UI
 Puzzle solving (Drag and Drop Puzzle)
 Secret page with glitch + ASCII art animations
 Clean separation of frontend & backend
 
+---
 
-🔮 Future Enhancements
+### 🔮 Future Enhancements
 
 Add a timer for puzzle completion
 Add some more animations to make it attractive
 
-👩‍💻 Contributor
+---
+
+### 👩‍💻 Contributor
 
 [G. SAHASRA]
-```
