@@ -1,34 +1,82 @@
-# Retro-Cyber Terminal + JWT + Secret Key (GDG Challenge)
+# GDG – Retro Cyber Challenge(Project Retro_Lock) 🔐🎮
 
-A mini CTF-style web app with a **retro-cyber terminal**, **JWT auth**, and a **2–3 step discovery** to reveal a secret key.
+## 🚀 Overview
 
-## Flow
-1. Visit landing page → type `help`, explore commands.
-2. Use `credentials` to discover login.
-3. `login` → go to login page and authenticate.
-4. After login (chosen account only), go to `/puzzle` and solve the Caesar cipher.
-5. When solved, click **REVEAL SECRET KEY** to fetch from protected API.
+This is a **terminal-style puzzle game** built as challenged by **Google Developer Groups**.  
+The game runs in a simulated terminal(like 1990's) inside the browser, where players need to solve challenges and unlock a **secret key page** 🎉.
 
-## Tech
-- **Web**: React + Vite, neon/glitch/CRT effects, Matrix rain.
-- **Backend**: Node.js + Express, JWT (httpOnly cookie), protected routes.
+---
 
-## Quick Start
+## 🏗️ Project Architecture
+
+The project is divided into **client**(Frontend) and **server**(Backend):
+
+---
+
+## ⚡ Tech Stack
+
+- **Frontend**: React + Vite
+- **Backend**: Node.js + Express.js
+- **Hosting**: Vercel (client) & Render/Heroku (server)
+
+---
+
+## 🔑 Secret Key Flow
+
+<details>
+<summary>Click to view explanation</summary>
+
+1. The user runs the app and gets a **terminal-like interface**.
+2. User need to find correct login credentials and how to get login page.
+3. When correct credentials entered, they are redirected to a puzzle.
+4. Once solved, they are redirected to a **secret page**.
+5. The secret page displays a **glitch animation with the unlocked key**.
+
+</details>
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone Repository
+
 ```bash
-# in one terminal
-cd server && npm install && cp .env.example .env && npm run dev
+git clone https://github.com/Sahasra-iiits/GDG---Retro-Cyber-Challenge-PROJECT-RETRO_LOCK-.git
+cd gdg-project
 
-# in another terminal
-cd client && npm install && echo "VITE_API_BASE=http://localhost:4000" > .env && npm run dev
+2️⃣ Install Dependencies
+
+Client
+cd client
+npm install
+npm run dev
+
+Server
+cd server
+npm install
+npm start
+
+🌐 Deployment
+
+Client (React): Vercel Link
+
+Server (Node/Express): Heroku/Render Link
+
+
+🎨 Features
+
+Terminal-style UI
+Puzzle solving (Drag and Drop Puzzle)
+Secret page with glitch + ASCII art animations
+Clean separation of frontend & backend
+
+
+🔮 Future Enhancements
+
+Add a timer for puzzle completion
+Add some more animations to make it attractive
+
+👩‍💻 Contributor
+
+[G. SAHASRA]
 ```
-
-Open http://localhost:5173
-
-## Deploy
-- **Frontend (Vercel/Netlify)**: set `VITE_API_BASE` to your backend URL.
-- **Backend (Railway/Render/Heroku)**: set `FRONTEND_ORIGIN` to your frontend URL, `JWT_SECRET` to a strong value, enable cookies over HTTPS (`secure: true`).
-
-## Secret Key Design
-- Discovery is logical, not obvious.
-- Terminal commands: `help, clear, whoami, status, credentials, login, matrix, decode, about, fortune, keyhint`.
-- Two protections: JWT + role-based access + final query `code=matrix`.
