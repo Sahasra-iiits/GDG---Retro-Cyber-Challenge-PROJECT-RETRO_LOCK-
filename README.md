@@ -65,6 +65,27 @@ npm start
 
 ---
 
+## Screenshots
+
+### Landing Page
+![Homepage Screenshot](./screenshots/img1.png)
+
+### Login Page (Step 1)
+![LoginPage Screenshot](./screenshots/img2.png)
+
+### Puzzle Page (Step 2)
+![Puzzle Page Screenshot](./screenshots/img3.png)
+
+### Secret Key Page 
+![Secret Key Page Screenshot](./screenshots/img4.png)
+
+---
+
+### Demo Video Link
+
+[Click here to watch the video](https://youtu.be/xOKSdV54WvE?si=h6SRY2qkFxQsTBV9)
+
+---
 
 ### 🎨 Features
 
@@ -77,6 +98,9 @@ Secret page with glitch + ASCII art animations
 Clean separation of frontend & backend
 
 ---
+
+### Usage of AI
+Used Ai tool(ChatGPT) to add animations in frontend to make it more attractive. Also used it for Authentication in backend. Took some help to create logic for puzzle.
 
 ### 🔮 Future Enhancements
 
